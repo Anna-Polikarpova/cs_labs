@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication6
+namespace ConsoleApplication1
 {
     class Program
     {
@@ -18,7 +18,7 @@ namespace ConsoleApplication6
             }
             catch (Exception e)
             {
-                Console.WriteLine("Вы ввели не число, попробуйте снова!");
+                Console.WriteLine("Р’С‹ РІРІРµР»Рё РЅРµ С‡РёСЃР»Рѕ, РїРѕРїСЂРѕР±СѓР№С‚Рµ СЃРЅРѕРІР°!");
                 return input();
             }
         }
@@ -27,11 +27,11 @@ namespace ConsoleApplication6
             double D = Math.Sqrt(B * B - 4 * A * C);
             if (double.IsNaN(D))
             {
-                Console.WriteLine("Вещественного дискриминанта не существует!");
+                Console.WriteLine("Р’РµС‰РµСЃС‚РІРµРЅРЅРѕРіРѕ РґРёСЃРєСЂРёРјРёРЅР°РЅС‚Р° РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚!");
             }
             else 
             {
-                Console.WriteLine("Корни: ");
+                Console.WriteLine("РљРѕСЂРЅРё: ");
                 Console.Write((-B + D) / (2 * A));
                 Console.Write(" ");
                 Console.Write((-B - D) / (2 * A));
@@ -40,11 +40,11 @@ namespace ConsoleApplication6
         static void Main(string[] args)
         {
             double A, B, C, D;
-            Console.WriteLine("Введите старший коэффициент (А): ");
+            Console.WriteLine("Р’РІРµРґРёС‚Рµ СЃС‚Р°СЂС€РёР№ РєРѕСЌС„С„РёС†РёРµРЅС‚ (Рђ): ");
             A = input();
-            Console.WriteLine("Введите коэффициент при 'x' (B): ");
+            Console.WriteLine("Р’РІРµРґРёС‚Рµ РєРѕСЌС„С„РёС†РёРµРЅС‚ РїСЂРё 'x' (B): ");
             B = input();
-            Console.WriteLine("Введите свободный коэффициент (С): ");
+            Console.WriteLine("Р’РІРµРґРёС‚Рµ СЃРІРѕР±РѕРґРЅС‹Р№ РєРѕСЌС„С„РёС†РёРµРЅС‚ (РЎ): ");
             C = input();
             calculate(A, B, C);
             Console.ReadKey();
